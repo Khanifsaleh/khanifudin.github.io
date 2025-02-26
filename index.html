@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: #333;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+        }
+        .navbar .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #f4b400;
+        }
+        .navbar ul {
+            list-style: none;
+            display: flex;
+        }
+        .navbar ul li {
+            margin: 0 15px;
+        }
+        .navbar ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+        }
+        .section {
+            padding: 80px 20px;
+            height: 100vh;
+        }
+        #about { background: #f4f4f4; }
+        #experience { background: #ddd; }
+        #projects { background: #bbb; }
+        #education { background: #999; }
+        .content {
+            max-width: 800px;
+            margin: auto;
+        }
+        img.profile {
+            width: 150px;
+            border-radius: 50%;
+            display: block;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">My Name</div>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Personal Projects</a></li>
+            <li><a href="#education">Education</a></li>
+        </ul>
+    </nav>
+
+    <section id="about" class="section">
+        <div class="content">
+            <h2>About Me</h2>
+            <img src="profile.jpg" alt="My Photo" class="profile">
+            <p>Write your description here...</p>
+        </div>
+    </section>
+
+    <section id="experience" class="section">
+        <div class="content">
+            <h2>Experience</h2>
+            <h3>Company Name - Job Title</h3>
+            <p>Job description goes here.</p>
+            <ul>
+                <li>Project 1</li>
+                <li>Project 2</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <div class="content">
+            <h2>Personal Projects</h2>
+            <h3>Project Name</h3>
+            <p>Project description goes here.</p>
+        </div>
+    </section>
+
+    <section id="education" class="section">
+        <div class="content">
+            <h2>Education</h2>
+            <h3>University Name</h3>
+            <p>Degree details go here.</p>
+        </div>
+    </section>
+</body>
+</html>
